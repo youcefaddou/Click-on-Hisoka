@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Click on Hisoka</title>
+</head>
+
+<body>
+    <main>
+        <h1>Click on Hisoka</h1>
+        <section>
+            <div class="left-column">
+                <div id="menu-container">
+                    <button id="start-button">Commencer</button>
+                    <button id="options-button">Options</button>
+                    <button id="quit-button">Quitter</button>
+                </div>
+                <div id="options-menu" class="hidden">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" min="0" max="100">
+                    <label for="difficulty">Difficulté</label>
+                    <select id="difficulty">
+                        <option value="easy">Facile</option>
+                        <option value="medium">Moyenne</option>
+                        <option value="hard">Difficile</option>
+                    </select>
+                    <button id="back-button">Retour</button>
+                </div>
+            </div>
+            <div class="right-column">
+                <div id="game-container" class="hidden">
+                    <img id="clown" src="./assets/images/Hisoka.png" alt="hisoka">
+                    <div id="score">Score: 0</div>
+                    <div id="timer">Temps restant: 30s</div>
+                </div>
+                <div id="end-screen" class="hidden">
+                    <h2>Fin de la Partie !</h2>
+                    <p id="final-score">Score final: 0</p>
+                    <button id="replay-button">Rejouer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
