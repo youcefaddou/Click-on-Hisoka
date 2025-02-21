@@ -17,7 +17,7 @@ main {
 
 section {
     display: flex;
-    flex-direction: row; /* Added this line */
+    flex-direction: row; 
     width: 100%;
 }
 
@@ -99,7 +99,14 @@ button:hover {
         transform: rotate(360deg);
     }
 }
-
+/* @keyframes moveLinear {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(var(--move-x), var(--move-y));
+    }
+} */
 #clown {
     position: absolute;
     width: 70px;
@@ -107,8 +114,8 @@ button:hover {
     background-image: url('./assets/images/Hisoka.png');
     background-size: cover;
     cursor: pointer;
-    transition: transform 0.2s;
-    animation: spin 4s linear infinite;
+    transition: left 1s ease, top 1s ease;
+    animation: spin 4s linear infinite, 
 }
 
 #clown:hover {

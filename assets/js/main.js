@@ -41,13 +41,18 @@ function moveClown() {
 
     let randomX = Math.floor(Math.random() * maxWidth)
     let randomY = Math.floor(Math.random() * maxHeight)
-
     let randomRotation = Math.floor(Math.random() * 360)
+
+    // let randomDistanceX = Math.random() * maxWidth - (maxWidth / 2) // déplacement aléatoire entre -100px et 100px
+    // let randomDistanceY = Math.random() * maxHeight - (maxHeight / 2)
 
     clown.style.left = `${randomX}px`
     clown.style.top = `${randomY}px`
 
     clown.style.transform = `rotate(${randomRotation}deg)`
+
+    
+
 }
 
 let moveIntervalID
